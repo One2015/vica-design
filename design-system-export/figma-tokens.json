@@ -1,0 +1,265 @@
+{
+  "$schema": "https://schemas.figmatokens.com/tokens.json",
+  "global": {
+    "colors": {
+      "brand": {
+        "primary": {
+          "value": "#BD7D31",
+          "type": "color",
+          "description": "暖棕色 - Footer背景、Contact区域、强调元素"
+        },
+        "background": {
+          "value": "#fcf6eb",
+          "type": "color",
+          "description": "米白色 - 页面背景、Header背景"
+        },
+        "text-primary": {
+          "value": "#1a1a1a",
+          "type": "color",
+          "description": "深黑色 - 主要文字"
+        },
+        "text-secondary": {
+          "value": "#666666",
+          "type": "color",
+          "description": "次要文字 - Services列表项"
+        }
+      },
+      "border": {
+        "light": {
+          "value": "rgba(26, 26, 26, 0.1)",
+          "type": "color",
+          "description": "Header底部细线"
+        },
+        "medium": {
+          "value": "rgba(26, 26, 26, 0.2)",
+          "type": "color",
+          "description": "Footer分隔线"
+        },
+        "default": {
+          "value": "#e3e2e2",
+          "type": "color",
+          "description": "Services标题顶部线"
+        }
+      },
+      "white": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "overlay": {
+        "card-gradient-end": {
+          "value": "rgba(0, 0, 0, 0.5)",
+          "type": "color",
+          "description": "ProjectCard底部黑色渐变终点"
+        }
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "serif": {
+          "value": "Playfair Display",
+          "type": "fontFamilies",
+          "description": "主字体 - Logo、标题、项目名、Contact标题"
+        },
+        "sans": {
+          "value": "Inter",
+          "type": "fontFamilies",
+          "description": "辅助字体 - 正文备用"
+        }
+      },
+      "fontSizes": {
+        "13": {
+          "value": "13px",
+          "type": "fontSizes",
+          "description": "Footer信息栏文字"
+        },
+        "14": {
+          "value": "14px",
+          "type": "fontSizes",
+          "description": "ProjectCard 标题 & 副标题"
+        },
+        "15": {
+          "value": "15px",
+          "type": "fontSizes",
+          "description": "表单输入框文字"
+        },
+        "16": {
+          "value": "16px",
+          "type": "fontSizes",
+          "description": "Services标题/列表、Header Contact Us"
+        },
+        "20": {
+          "value": "20px",
+          "type": "fontSizes",
+          "description": "Introduction段落、Header Logo"
+        },
+        "32": {
+          "value": "32px",
+          "type": "fontSizes",
+          "description": "Contact成功标题 (mobile)"
+        },
+        "40": {
+          "value": "40px",
+          "type": "fontSizes",
+          "description": "Contact成功标题 (desktop)"
+        },
+        "48": {
+          "value": "48px",
+          "type": "fontSizes",
+          "description": "Contact Us 标题 (mobile)"
+        },
+        "60": {
+          "value": "60px",
+          "type": "fontSizes",
+          "description": "Contact Us 标题 (desktop)"
+        }
+      },
+      "lineHeights": {
+        "tight": {
+          "value": "16px",
+          "type": "lineHeights",
+          "description": "ProjectCard 标题行高"
+        },
+        "normal": {
+          "value": "150%",
+          "type": "lineHeights",
+          "description": "标准行高 - body"
+        },
+        "relaxed": {
+          "value": "160%",
+          "type": "lineHeights",
+          "description": "Introduction段落行高"
+        },
+        "loose": {
+          "value": "190%",
+          "type": "lineHeights",
+          "description": "Footer信息栏行高"
+        }
+      },
+      "fontWeights": {
+        "normal": {
+          "value": "400",
+          "type": "fontWeights",
+          "description": "默认字重"
+        },
+        "semibold": {
+          "value": "600",
+          "type": "fontWeights",
+          "description": "Footer VICA DESIGN标签"
+        },
+        "bold": {
+          "value": "700",
+          "type": "fontWeights"
+        }
+      },
+      "letterSpacing": {
+        "normal": {
+          "value": "0",
+          "type": "letterSpacing"
+        },
+        "wide": {
+          "value": "0.05em",
+          "type": "letterSpacing",
+          "description": "Services标题 tracking"
+        },
+        "wider": {
+          "value": "0.1em",
+          "type": "letterSpacing",
+          "description": "uppercase标签"
+        },
+        "widest": {
+          "value": "0.15em",
+          "type": "letterSpacing",
+          "description": "SUBMIT按钮、Contact Us链接"
+        }
+      }
+    },
+    "spacing": {
+      "4": {
+        "value": "4px",
+        "type": "spacing",
+        "description": "0.4rem - ProjectCard间距gap"
+      },
+      "20": {
+        "value": "20px",
+        "type": "spacing",
+        "description": "2rem - Header上下padding、小间距"
+      },
+      "40": {
+        "value": "40px",
+        "type": "spacing",
+        "description": "4rem - 中等间距、Services两组间距"
+      },
+      "56": {
+        "value": "56px",
+        "type": "spacing",
+        "description": "5.6rem - Section上下padding"
+      },
+      "60": {
+        "value": "60px",
+        "type": "spacing",
+        "description": "6rem - Footer主区域padding"
+      },
+      "80": {
+        "value": "80px",
+        "type": "spacing",
+        "description": "8rem - Contact区域padding (mobile)"
+      },
+      "100": {
+        "value": "100px",
+        "type": "spacing",
+        "description": "10rem - Contact表单区padding"
+      },
+      "120": {
+        "value": "120px",
+        "type": "spacing",
+        "description": "12rem - Introduction首行缩进"
+      }
+    },
+    "sizing": {
+      "header-height": {
+        "value": "70px",
+        "type": "sizing",
+        "description": "7rem - Header固定高度"
+      },
+      "max-width-text": {
+        "value": "600px",
+        "type": "sizing",
+        "description": "60rem - Introduction最大宽度"
+      },
+      "max-width-form": {
+        "value": "500px",
+        "type": "sizing",
+        "description": "50rem - 表单最大宽度"
+      },
+      "max-width-footer": {
+        "value": "1400px",
+        "type": "sizing",
+        "description": "140rem - Footer内容最大宽度"
+      }
+    },
+    "borderRadius": {
+      "none": {
+        "value": "0",
+        "type": "borderRadius",
+        "description": "全站无圆角设计"
+      }
+    },
+    "transition": {
+      "fast": {
+        "value": "opacity 200ms ease",
+        "type": "other",
+        "description": "Hover opacity - 快速"
+      },
+      "normal": {
+        "value": "all 300ms ease",
+        "type": "other",
+        "description": "标准过渡"
+      },
+      "slow": {
+        "value": "all 400ms ease",
+        "type": "other",
+        "description": "页面级动画"
+      }
+    }
+  }
+}

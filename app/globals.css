@@ -2,26 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    font-size: 62.5%; /* 1rem = 10px */
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+    overflow-wrap: break-word;
+  }
+
+  body {
+    font-family: var(--font-serif), Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+    font-size: 1.5rem; /* 15px */
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #fcf6eb;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  p, blockquote, ul, ol, li, figure, figcaption {
+    margin: 0;
+  }
+
+  ul, ol {
+    list-style: none;
+    padding: 0;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Full-to-half underline hover */
+  .link-underline {
+    @apply relative pb-[0.3rem];
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 right-0 w-full border-b border-current;
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition: transform 0.5s ease;
+  }
+
+  .link-underline:hover::after {
+    transform: scaleX(0.75);
+  }
+
+  /* Grow-in underline hover */
+  .link-grow::after {
+    content: '';
+    @apply absolute bottom-0 left-0 right-0 w-full border-b border-current;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s ease;
+  }
+
+  .link-grow:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* CTA button */
+  .btn-cta {
+    @apply inline-block text-[1.3rem] font-bold tracking-[0.15em] uppercase;
+    padding: 0.8rem 0;
+    border-bottom: 2px solid currentColor;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-cta:hover {
+    opacity: 0.6;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
   }
 }
