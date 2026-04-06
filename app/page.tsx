@@ -115,8 +115,9 @@ export default function HomePage() {
       <footer className="bg-[#2f3532] text-white mt-[4px]">
 
         {/* Contact form section - More spacing */}
-        <div className="pt-[177px] pb-[80px] px-page">
+        <div className="pt-[177px] pb-[340px] px-page">
           <div className="max-w-[1392px] mx-auto flex flex-col items-center gap-[80px]">
+
 
             {/* Title and subtitle */}
             <div className="text-center">
@@ -129,7 +130,9 @@ export default function HomePage() {
             </div>
 
             {/* Contact Form */}
-            <ContactForm />
+            <div className="w-full max-w-[800px]">
+              <ContactForm />
+            </div>
           </div>
         </div>
 

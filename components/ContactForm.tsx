@@ -34,7 +34,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-[2rem] max-w-[50rem] mx-auto text-left">
+    <form onSubmit={handleSubmit} className="space-y-[2rem] w-full text-left">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[2rem]">
         <input
           type="text"
@@ -57,8 +57,7 @@ export function ContactForm() {
       <div>
         <p className="font-serif text-[1.5rem] text-white/60 mb-[0.5rem]">Message</p>
         <textarea
-          rows={4}
-          className="font-serif w-full bg-transparent border border-white/30 text-white px-[1.5rem] py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors resize-none"
+          className="font-serif w-full h-[300px] bg-transparent border border-white/30 text-white px-[1.5rem] py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors resize-none"
         />
       </div>
       <div className="text-center pt-[1rem]">
