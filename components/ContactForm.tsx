@@ -40,25 +40,25 @@ export function ContactForm() {
           type="text"
           placeholder="Your Name"
           required
-          className="bg-transparent border-b border-white/40 text-white placeholder:text-white/60 px-0 py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors"
+          className="font-serif bg-transparent border-b border-white/40 text-white placeholder:text-white/60 px-0 py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors"
         />
         <input
           type="tel"
           placeholder="Your Phone"
-          className="bg-transparent border-b border-white/40 text-white placeholder:text-white/60 px-0 py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors"
+          className="font-serif bg-transparent border-b border-white/40 text-white placeholder:text-white/60 px-0 py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors"
         />
       </div>
       <input
         type="email"
         placeholder="Email"
         required
-        className="w-full bg-transparent border-b border-white/40 text-white placeholder:text-white/60 px-0 py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors"
+        className="font-serif w-full bg-transparent border-b border-white/40 text-white placeholder:text-white/60 px-0 py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors"
       />
       <div>
-        <p className="text-[1.5rem] text-white/60 mb-[0.5rem]">Message</p>
+        <p className="font-serif text-[1.5rem] text-white/60 mb-[0.5rem]">Message</p>
         <textarea
           rows={4}
-          className="w-full bg-transparent border border-white/30 text-white px-[1.5rem] py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors resize-none"
+          className="font-serif w-full bg-transparent border border-white/30 text-white px-[1.5rem] py-[1rem] text-[1.5rem] focus:outline-none focus:border-white transition-colors resize-none"
         />
       </div>
       <div className="text-center pt-[1rem]">
@@ -66,8 +66,8 @@ export function ContactForm() {
           type="submit"
           disabled={status === 'loading'}
           className="
-            bg-[#fcf6eb] text-[#1a1a1a]
-            px-[3rem] py-[1rem] text-[1.3rem] uppercase tracking-[0.15em]
+            font-serif bg-[#fcf6eb] text-[#1a1a1a]
+            px-[3rem] py-[1rem] text-[1.3rem] uppercase tracking-[1.95px]
             transition-all duration-200
             hover:bg-[#1a1a1a] hover:text-[#fcf6eb]
             disabled:opacity-60 disabled:cursor-not-allowed

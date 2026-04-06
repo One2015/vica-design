@@ -1,132 +1,154 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { ContactForm } from '@/components/ContactForm'
 
-// Placeholder project data — replace with real data/CMS later
+// Project data based on Figma design
 const featuredProjects = [
   {
     slug: 'hawthorn-house',
     title: 'Hawthorn House',
     role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'landscape' as const,
-    image: '/images/placeholder-landscape.jpg',
-    imageMobile: '/images/placeholder-portrait.jpg',
+    image: '/images/hawthorn-house.jpg',
   },
   {
     slug: 'golden-light',
     title: 'Golden Light',
     role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/placeholder-portrait.jpg',
-    imageMobile: '/images/placeholder-portrait.jpg',
+    image: '/images/golden-light.jpg',
   },
   {
     slug: 'bradleys-head',
     title: 'Bradleys Head House',
     role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/placeholder-portrait.jpg',
-    imageMobile: '/images/placeholder-portrait.jpg',
+    image: '/images/bradleys-head.jpg',
   },
   {
     slug: 'mosman-residence',
     title: 'Mosman Residence',
     role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'landscape' as const,
-    image: '/images/placeholder-landscape.jpg',
-    imageMobile: '/images/placeholder-portrait.jpg',
+    image: '/images/mosman-residence.jpg',
   },
   {
     slug: 'paddington-terrace',
     title: 'Paddington Terrace',
     role: 'Interior Decoration, Furniture Selection and Art Curation',
     layout: 'portrait' as const,
-    image: '/images/placeholder-portrait.jpg',
-    imageMobile: '/images/placeholder-portrait.jpg',
+    image: '/images/paddington-terrace.jpg',
   },
   {
     slug: 'bondi-beach-house',
     title: 'Bondi Beach House',
     role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/placeholder-portrait.jpg',
-    imageMobile: '/images/placeholder-portrait.jpg',
+    image: '/images/mosman-residence.jpg',
   },
 ]
 
 export default function HomePage() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#fcf6eb]">
 
-      {/* ═══ 前 3 个项目 ═══ */}
-      <ProjectGrid projects={featuredProjects.slice(0, 3)} />
+      {/* ═══ Hero Project (Hawthorn House) ═══ */}
+      <ProjectCard project={featuredProjects[0]} priority />
 
-      {/* ═══ Introduction 文字 - 20px ═══ */}
-      <div className="px-page py-[5.6rem]">
-        <p className="text-[20px] leading-[1.6] max-w-[60rem] ml-auto md:indent-[12rem]">
-          Our approach to designing interiors is to listen and understand what
-          matters to you and learn how daily life unfolds within your world. We
-          enjoy the process of helping you articulate your own taste and vision
-          and through our breadth of industry knowledge breathe new life into
-          your space.
-        </p>
+      {/* ═══ Two Portrait Projects (Golden Light + Bradleys Head) ═══ */}
+      <div className="flex gap-[4px]">
+        <ProjectCard project={featuredProjects[2]} className="w-1/2" priority />
+        <ProjectCard project={featuredProjects[1]} className="w-1/2" priority />
       </div>
 
-      {/* ═══ Services 服务列表 - 15px ═══ */}
-      <div className="px-page pb-[5.6rem]">
-        <div className="space-y-[2rem]">
+      {/* ═══ Introduction + Services ═══ */}
+      <div className="max-w-[1392px] mx-auto px-page">
+
+        {/* Introduction - Right aligned */}
+        <div className="pt-[120px] pb-[100px] flex justify-end">
+          <p className="font-serif text-[20px] leading-[32px] text-[#1a1a1a] max-w-[600px]">
+            At VICA DESIGN, space is not merely functional — it is a reflection of identity.
+            We design and craft high-end custom kitchens and fully integrated millwork systems
+            for discerning homeowners and builders. Every project begins with proportion and
+            ends in precision. Guided by design and elevated by craftsmanship, we bring together
+            form, material, light, and balance to create spaces defined by quiet sophistication.
+          </p>
+        </div>
+
+        {/* Services - Two columns */}
+        <div className="flex gap-[20px] max-w-[676px]">
           <ServiceGroup
-            title="Interior Design"
+            title="Custom Millwork"
             items={[
-              'New Build — working with clients & architects to create beautiful spaces',
-              'Renovation — working with clients or architects to redesign interior spaces',
-              'Selection of materials & finishes, such as flooring, tiles, paint etc',
-              'Custom design kitchens & bathrooms including structural & cosmetic changes',
-              'Custom design of wardrobes & built-in joinery such as cabinets',
+              'High-end custom kitchens',
+              'Architectural millwork systems',
+              'Wine rooms & storage',
+              'Wardrobes & closet systems',
+              'Fireplace features',
             ]}
           />
           <ServiceGroup
-            title="Interior Decoration"
+            title="Design & Craft"
             items={[
-              'Selection of furniture, lighting, rugs & accessories',
-              'Design of window treatments appropriate to interior & environmental factors',
-              'Design & management of bespoke upholstery and cushions',
-              'Curation, expansion & exhibition of artworks',
-              'Refreshing & rethinking heritage interiors',
+              'Spatial planning & design',
+              'Material selection',
+              'Hardware refinement',
+              '100% Canadian-made',
+              'Full project management',
             ]}
           />
         </div>
       </div>
 
-      {/* ═══ 后 3 个项目 ═══ */}
-      <ProjectGrid projects={featuredProjects.slice(3, 6)} />
+      {/* ═══ Spacing before more projects ═══ */}
+      <div className="h-[160px]" />
+
+      {/* ═══ More Projects ═══ */}
+      <ProjectCard project={featuredProjects[3]} />
+
+      <div className="flex gap-[4px] mt-[4px]">
+        <ProjectCard project={featuredProjects[4]} className="w-1/2" />
+        <ProjectCard project={featuredProjects[5]} className="w-1/2" />
+      </div>
 
       {/* ═══ Contact Us + Footer ═══ */}
-      <footer className="bg-[#BD7D31] text-white">
+      <footer className="bg-[#2f3532] text-white mt-[4px]">
 
-        {/* Contact 表单区 */}
-        <div className="py-[10rem] px-page text-center">
-          <h2 className="font-serif text-[4.8rem] md:text-[6rem] mb-[2rem]">
-            Contact us
-          </h2>
-          <p className="text-[1.6rem] text-white/80 mb-[5rem]">
-            Thank you for your enquiry to VICA design.
-          </p>
-          <ContactForm />
+        {/* Contact form section - More spacing */}
+        <div className="pt-[177px] pb-[80px] px-page">
+          <div className="max-w-[1392px] mx-auto flex flex-col items-center gap-[80px]">
+
+            {/* Title and subtitle */}
+            <div className="text-center">
+              <h2 className="font-serif text-[60px] leading-[90px] mb-0">
+                Contact us
+              </h2>
+              <p className="text-[16px] leading-[24px] text-white/80">
+                Thank you for your enquiry to VICA design.
+              </p>
+            </div>
+
+            {/* Contact Form */}
+            <ContactForm />
+          </div>
         </div>
 
-        {/* Footer 信息栏 */}
-        <div className="px-page pb-[4rem] flex flex-col md:flex-row justify-between items-start text-[1.3rem] leading-[1.9] text-white/80">
+        {/* Footer info bar */}
+        <div className="px-page pb-[40px] flex justify-between items-start text-[13px] leading-[24.7px] text-white/80">
           <div>
-            <p className="uppercase tracking-wide text-white mb-[0.5rem]">TORONTO</p>
-            <p>450 Matheson Blvd E, unit 59, 67-70</p>
+            <p className="uppercase tracking-[0.325px] text-white mb-0">TORONTO</p>
+            <p className="mt-[5px]">450 Matheson Blvd E, unit 59, 67-70</p>
             <p>Mississauga, ON L4Z 1P1</p>
             <p>+1 437-999-1137</p>
           </div>
-          <div className="mt-[3rem] md:mt-0 text-left md:text-right">
-            <p className="uppercase tracking-wide text-white mb-[0.5rem]">SOCIAL</p>
-            <a href="https://instagram.com/vicadesign" target="_blank" rel="noopener noreferrer" className="block hover:opacity-60 transition-opacity">Instagram</a>
-            <a href="https://youtube.com/@vicadesign" target="_blank" rel="noopener noreferrer" className="block hover:opacity-60 transition-opacity">YouTube</a>
-            <a href="https://linkedin.com/company/vicadesign" target="_blank" rel="noopener noreferrer" className="block hover:opacity-60 transition-opacity">LinkedIn</a>
+          <div className="text-right">
+            <p className="uppercase tracking-[0.325px] text-white mb-0">SOCIAL</p>
+            <a href="https://instagram.com/vicadesign" target="_blank" rel="noopener noreferrer"
+               className="block mt-[5px] hover:opacity-60 transition-opacity">Instagram</a>
+            <a href="https://youtube.com/@vicadesign" target="_blank" rel="noopener noreferrer"
+               className="block hover:opacity-60 transition-opacity">YouTube</a>
+            <a href="https://linkedin.com/company/vicadesign" target="_blank" rel="noopener noreferrer"
+               className="block hover:opacity-60 transition-opacity">LinkedIn</a>
           </div>
         </div>
 
@@ -136,53 +158,65 @@ export default function HomePage() {
   )
 }
 
-function ProjectGrid({ projects }: { projects: typeof featuredProjects }) {
+// Project Card Component
+function ProjectCard({
+  project,
+  priority = false,
+  className = ""
+}: {
+  project: typeof featuredProjects[0]
+  priority?: boolean
+  className?: string
+}) {
+  const isLandscape = project.layout === 'landscape'
+  // Landscape: 1512:738 ratio = 48.8% height
+  // Portrait: 754:624.797 ratio = 82.9% height
+  const aspectRatio = isLandscape ? '48.8%' : '82.9%'
+
   return (
-    <ul className="flex flex-wrap gap-[0.4rem]">
-      {projects.map((project) => (
-        <li
-          key={project.slug}
-          className={[
-            'relative',
-            project.layout === 'landscape'
-              ? 'w-full'
-              : 'w-full md:w-[calc(50%-0.2rem)]',
-          ].join(' ')}
+    <div className={`relative ${className}`}>
+      <figure className="relative w-full overflow-hidden bg-stone-200" style={{ paddingBottom: aspectRatio }}>
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          sizes={isLandscape ? "100vw" : "(max-width: 768px) 100vw, 50vw"}
+          quality={100}
+          priority={priority}
+          className="absolute inset-0 object-cover"
+        />
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50" />
+
+        {/* Text overlay */}
+        <Link
+          href={`/projects/${project.slug}`}
+          className="absolute bottom-0 left-0 right-0 text-center text-white pt-[56px] pb-[56px]"
         >
-          <figure
-            className={[
-              'relative overflow-hidden bg-stone-200',
-              project.layout === 'landscape' ? 'h-[80vw] md:h-[80vh]' : 'h-[128vw] md:h-[80vh]',
-            ].join(' ')}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50" />
-          </figure>
-          <Link
-            href={`/projects/${project.slug}`}
-            className="absolute bottom-0 left-0 right-0 text-center text-white pb-[5.6rem] pt-[5.6rem]"
-          >
-            <h2 className="text-[14px] leading-[16px] uppercase tracking-normal font-serif m-0 p-0 relative z-10">
-              {project.title}
-            </h2>
-            <p className="text-[14px] leading-[16px] italic font-serif m-0 mt-[2px] p-0 relative z-10 opacity-90">
-              {project.role}
-            </p>
-          </Link>
-        </li>
-      ))}
-    </ul>
+          <h2 className="font-serif text-[14px] leading-[16px] uppercase mb-[2px]">
+            {project.title}
+          </h2>
+          <p className="font-serif italic text-[14px] leading-[16px] opacity-90">
+            {project.role}
+          </p>
+        </Link>
+      </figure>
+    </div>
   )
 }
 
+// Service Group Component
 function ServiceGroup({ title, items }: { title: string; items: string[] }) {
   return (
-    <div>
-      <h3 className="text-[16px] uppercase tracking-[0.1em] border-t border-border pt-[2rem]">
-        {title}
-      </h3>
-      <ul className="mt-[1.5rem] space-y-[0.5rem]">
+    <div className="flex-1">
+      <div className="h-[43px] border-t border-[#1a1a1a]/20 pt-[20px]">
+        <h3 className="font-serif text-[15px] leading-[22.5px] uppercase tracking-[1.5px] text-[#1a1a1a]">
+          {title}
+        </h3>
+      </div>
+      <ul className="mt-[15px] space-y-[5px] list-none">
         {items.map((item) => (
-          <li key={item} className="text-[16px] leading-[1.5] text-secondary">
+          <li key={item} className="font-serif text-[15px] leading-[22.5px] text-[#1a1a1a]">
             {item}
           </li>
         ))}

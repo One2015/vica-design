@@ -222,7 +222,7 @@ export default function AboutPage() {
       {/* ── CTA ── */}
       <section className="px-page py-[12rem] text-center">
         <p className="font-serif text-[clamp(1.5rem,3vw,2.4rem)] max-w-[50rem] mx-auto mb-[4rem]">
-          If you have a project in mind, we'd love to hear from you.
+          If you have a project in mind, we&apos;d love to hear from you.
         </p>
         <Link href="/contact" className="btn-cta">
           Get in touch
