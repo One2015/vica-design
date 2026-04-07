@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turney Drive — VICA DESIGN</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+  <style>
+    .video-showcase {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-bottom: clamp(1rem, 2vw, 2rem);
+      background: #1a1815;
+    }
+    .video-showcase video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery__image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(1rem, 2vw, 2rem);
+      margin-bottom: clamp(1rem, 2vw, 2rem);
+    }
+    .gallery__image-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav nav--scrolled" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="../index.html" class="nav__logo">
+          VICA
+          <span>Design Studio</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#philosophy">Philosophy</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#contact">Enquire</a></li>
+        </ul>
+        <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose" aria-label="Close menu">✕</button>
+    <a href="../index.html#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="../index.html#philosophy" onclick="closeMobileMenu()">Philosophy</a>
+    <a href="../index.html#services" onclick="closeMobileMenu()">Services</a>
+    <a href="../index.html#contact" onclick="closeMobileMenu()">Enquire</a>
+  </div>
+
+  <section class="project-hero">
+    <div class="container">
+      <span class="label project-hero__label">Residential Project</span>
+      <h1>Turney Drive</h1>
+      <p class="project-hero__desc">A Mississauga residence where the master suite was reimagined as a sanctuary. Custom walk-in closets with integrated lighting, bespoke vanity systems, and wellness-grade bathroom finishes transform private quarters into spaces of considered luxury and daily ritual.</p>
+      <div class="project-meta">
+        <div class="project-meta__item">
+          <span class="label">Scope</span>
+          <span class="project-meta__value">Master Suite & Wellness</span>
+        </div>
+        <div class="project-meta__item">
+          <span class="label">Location</span>
+          <span class="project-meta__value">Turney Drive, Mississauga</span>
+        </div>
+        <div class="project-meta__item">
+          <span class="label">Category</span>
+          <span class="project-meta__value">Closet & Bathroom Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-gallery">
+    <div class="container container--wide">
+
+      <div class="gallery__quote reveal" style="padding-top: 0;">
+        <blockquote>Where private quarters become sanctuary — custom closets and wellness-grade finishes elevate the master suite into a space of daily ritual and considered luxury.</blockquote>
+      </div>
+
+      <div class="gallery__image-grid">
+        <div class="reveal img-reveal">
+          <img src="../images/projects/adair-crescent/DSCF3260.jpg" alt="Bathroom vanity design" loading="lazy">
+        </div>
+        <div class="reveal img-reveal reveal-delay-1">
+          <img src="../images/projects/adair-crescent/DSCF3169.jpg" alt="Custom bathroom cabinetry" loading="lazy">
+        </div>
+        <div class="reveal img-reveal">
+          <img src="../images/projects/adair-crescent/DSCF3200.jpg" alt="Closet millwork detail" loading="lazy">
+        </div>
+        <div class="reveal img-reveal reveal-delay-1">
+          <img src="../images/projects/adair-crescent/DSCF3210.jpg" alt="Master suite finishes" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="project-nav">
+    <div class="container">
+      <div class="project-nav__inner">
+        <a href="pemberton-lane.html" class="project-nav__link">
+          <span class="label">Previous Project</span>
+          <span>Pemberton Lane</span>
+        </a>
+        <a href="adair-crescent.html" class="project-nav__link project-nav__link--next">
+          <span class="label">Next Project</span>
+          <span>Adair Crescent</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" style="background: var(--color-text);">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__copy">© 2026 VICA DESIGN. All Rights Reserved.</div>
+        <ul class="footer__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#contact">Enquire</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VICA DESIGN — High-End Custom Interiors, Toronto</title>
+  <meta name="description" content="VICA DESIGN crafts high-end custom kitchens and fully integrated millwork systems for discerning homeowners across the GTA.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          VICA
+          <span>Design Studio</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Enquire</a></li>
+        </ul>
+        <button class="nav__menu-btn" id="menuBtn" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose" aria-label="Close menu">✕</button>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#philosophy" onclick="closeMobileMenu()">Philosophy</a>
+    <a href="#services" onclick="closeMobileMenu()">Services</a>
+    <a href="#contact" onclick="closeMobileMenu()">Enquire</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero is-visible" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero/hero-1.jpg" alt="VICA Design — Custom kitchen with marble island and sculptural lighting">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h1>Shaping<br>Environments</h1>
+      <p class="hero__tagline">High-end custom interiors, crafted in Toronto</p>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="philosophy__grid">
+        <div class="reveal">
+          <span class="label philosophy__label">Our Philosophy</span>
+          <h2 class="philosophy__heading">Space is not merely<br>functional — it is a<br>reflection of identity.</h2>
+          <div class="philosophy__text">
+            <p>At VICA DESIGN, we design and craft high-end custom kitchens and fully integrated millwork systems for discerning homeowners and builders. Every project begins with proportion and ends in precision.</p>
+            <p>Guided by design and elevated by craftsmanship, we bring together form, material, light, and balance to create spaces defined by quiet sophistication.</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="philosophy__highlight">
+            Each commission is a deliberate study in order and aesthetics. From spatial flow to hardware refinement, from material composition to tonal harmony — every detail is considered, nothing is accidental.
+          </div>
+          <div class="philosophy__text" style="margin-top: 3rem;">
+            <p>With over a decade of experience and nearly a thousand projects completed across the GTA, our work is 100% Canadian-made, supported by carefully sourced materials and uncompromising quality standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="reveal">
+          <div class="stat__number">10+</div>
+          <div class="stat__label">Years of Experience</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="stat__number">1000+</div>
+          <div class="stat__label">Projects Completed</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="stat__number">100%</div>
+          <div class="stat__label">Canadian Made</div>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <div class="stat__number">GTA</div>
+          <div class="stat__label">Greater Toronto Area</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container container--wide">
+      <div class="projects__header reveal">
+        <span class="label">Selected Work</span>
+        <h2>Our Projects</h2>
+      </div>
+
+      <!-- Featured Row: 2 large -->
+      <div class="projects__grid projects__grid--featured">
+        <a href="projects/adair-crescent.html" class="project-card reveal img-reveal">
+          <img class="project-card__img" src="images/projects/adair-crescent/DSCF3275.jpg" alt="Adair Crescent — Bathroom and living renovation" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <div class="project-card__title">Adair Crescent</div>
+            <div class="project-card__scope">Full Home Renovation & Custom Millwork</div>
+          </div>
+        </a>
+        <a href="projects/willow-heights.html" class="project-card reveal reveal-delay-2 img-reveal">
+          <img class="project-card__img" src="images/projects/willow-heights/P1397482_HDR1.jpg" alt="Willow Heights — Modern kitchen integration" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <div class="project-card__title">Willow Heights</div>
+            <div class="project-card__scope">Custom Kitchen & Integrated Living</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Secondary Row: 3 medium -->
+      <div class="projects__grid projects__grid--secondary">
+        <a href="projects/carriage-trail.html" class="project-card reveal img-reveal">
+          <img class="project-card__img" src="images/projects/carriage-trail/DSCF0518.jpg" alt="Carriage Trail — Kitchen and cabinetry" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <div class="project-card__title">Carriage Trail</div>
+            <div class="project-card__scope">Custom Kitchen & Cabinetry</div>
+          </div>
+        </a>
+        <a href="projects/pemberton-lane.html" class="project-card reveal reveal-delay-1 img-reveal">
+          <img class="project-card__img" src="images/projects/pemberton-lane/P1364312.jpg" alt="Pemberton Lane — Kitchen and storage systems" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <div class="project-card__title">Pemberton Lane</div>
+            <div class="project-card__scope">Kitchen & Bespoke Storage Systems</div>
+          </div>
+        </a>
+        <a href="projects/turney-drive.html" class="project-card reveal reveal-delay-2 img-reveal">
+          <img class="project-card__img" src="images/projects/adair-crescent/DSCF3260.jpg" alt="Turney Drive — Master suite and spa" loading="lazy">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__info">
+            <div class="project-card__title">Turney Drive</div>
+            <div class="project-card__scope">Master Suite & Wellness Spaces</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__grid">
+        <div class="services__intro reveal">
+          <span class="label">What We Do</span>
+          <h2>Crafted to Elevate<br>the Way You Live</h2>
+          <p>We do not simply build cabinetry. We shape environments. Our approach combines design intelligence with master craftsmanship to create spaces that are both visually striking and deeply functional.</p>
+        </div>
+        <div class="services__list">
+          <div class="service-item reveal">
+            <span class="service-item__number">01</span>
+            <div>
+              <div class="service-item__title">Custom Kitchens</div>
+              <div class="service-item__desc">Bespoke kitchen design from concept to completion — precision cabinetry, material selection, and integrated appliance planning.</div>
+            </div>
+          </div>
+          <div class="service-item reveal reveal-delay-1">
+            <span class="service-item__number">02</span>
+            <div>
+              <div class="service-item__title">Integrated Millwork Systems</div>
+              <div class="service-item__desc">Wardrobes, built-in joinery, fireplace features, and bespoke storage — designed as architecture, crafted as furniture.</div>
+            </div>
+          </div>
+          <div class="service-item reveal reveal-delay-2">
+            <span class="service-item__number">03</span>
+            <div>
+              <div class="service-item__title">Wine Rooms & Specialty Spaces</div>
+              <div class="service-item__desc">Custom wine cellars, home bars, and specialty rooms that elevate the everyday into the exceptional.</div>
+            </div>
+          </div>
+          <div class="service-item reveal reveal-delay-3">
+            <span class="service-item__number">04</span>
+            <div>
+              <div class="service-item__title">Full Interior Renovation</div>
+              <div class="service-item__desc">Comprehensive design and build services — spatial planning, material composition, and tonal harmony throughout.</div>
+            </div>
+          </div>
+          <div class="service-item reveal reveal-delay-4">
+            <span class="service-item__number">05</span>
+            <div>
+              <div class="service-item__title">Bathroom & Wellness Design</div>
+              <div class="service-item__desc">Refined bathroom environments and wellness spaces — stone, tile, and fixture curation with spa-grade precision.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <span class="label">Get In Touch</span>
+          <h2>Have a Project<br>in Mind?</h2>
+          <p>We enjoy the process of understanding what matters to you and helping articulate your vision. Let us breathe new life into your space.</p>
+          <div class="contact__details">
+            <div class="contact__detail-item">
+              <span class="label">Studio</span>
+              <span>Toronto, Ontario, Canada</span>
+            </div>
+            <div class="contact__detail-item">
+              <span class="label">Email</span>
+              <a href="mailto:info@vicadesign.ca">info@vicadesign.ca</a>
+            </div>
+            <div class="contact__detail-item">
+              <span class="label">Phone</span>
+              <a href="tel:+14161234567">+1 (416) 123-4567</a>
+            </div>
+            <div class="contact__detail-item">
+              <span class="label">Social</span>
+              <a href="#" target="_blank">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form reveal reveal-delay-2" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Project Location">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Tell us about your project..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn">
+            Send Enquiry
+            <span class="btn__arrow">→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__copy">© 2026 VICA DESIGN. All Rights Reserved.</div>
+        <ul class="footer__links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
