@@ -1,0 +1,114 @@
+{
+  "spacing": {
+    "page-horizontal": {
+      "value": "clamp(1.5rem, 5vw, 6rem)",
+      "type": "spacing",
+      "description": "全站水平padding - 响应式 (15px - 60px)"
+    },
+    "section-vertical": {
+      "value": "clamp(3.75rem, 10vw, 10rem)",
+      "type": "spacing",
+      "description": "Section垂直间距 - 响应式 (37.5px - 100px)"
+    },
+    "0": {
+      "value": "0rem",
+      "type": "spacing"
+    },
+    "xs": {
+      "value": "0.4rem",
+      "type": "spacing",
+      "description": "4px - ProjectCard gap"
+    },
+    "sm": {
+      "value": "1rem",
+      "type": "spacing",
+      "description": "10px - 表单输入padding"
+    },
+    "md": {
+      "value": "1.5rem",
+      "type": "spacing",
+      "description": "15px - 表单输入padding"
+    },
+    "lg": {
+      "value": "2rem",
+      "type": "spacing",
+      "description": "20px - Header padding, 表单间距"
+    },
+    "xl": {
+      "value": "3rem",
+      "type": "spacing",
+      "description": "30px - 按钮padding"
+    },
+    "2xl": {
+      "value": "4rem",
+      "type": "spacing",
+      "description": "40px"
+    },
+    "3xl": {
+      "value": "5rem",
+      "type": "spacing",
+      "description": "50px - Footer copyright margin"
+    },
+    "section-sm": {
+      "value": "5.6rem",
+      "type": "spacing",
+      "description": "56px - Introduction/Services padding"
+    },
+    "footer": {
+      "value": "6rem",
+      "type": "spacing",
+      "description": "60px - Footer padding"
+    },
+    "header-height": {
+      "value": "7rem",
+      "type": "spacing",
+      "description": "70px - Header固定高度"
+    },
+    "contact-section": {
+      "value": "10rem",
+      "type": "spacing",
+      "description": "100px - Contact section padding"
+    }
+  },
+  "sizing": {
+    "viewport-height-portrait": {
+      "value": "80vh",
+      "type": "sizing",
+      "description": "ProjectCard高度 - 桌面端"
+    },
+    "viewport-width-portrait-mobile": {
+      "value": "80vw",
+      "type": "sizing",
+      "description": "ProjectCard高度 - 移动端 landscape"
+    },
+    "viewport-height-portrait-mobile": {
+      "value": "128vw",
+      "type": "sizing",
+      "description": "ProjectCard高度 - 移动端 portrait"
+    }
+  },
+  "maxWidth": {
+    "content": {
+      "value": "156rem",
+      "type": "sizing",
+      "description": "1560px - 内容最大宽度"
+    },
+    "wide": {
+      "value": "186rem",
+      "type": "sizing",
+      "description": "1860px - 宽屏内容最大宽度"
+    },
+    "form": {
+      "value": "50rem",
+      "type": "sizing",
+      "description": "500px - 表单最大宽度"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "value": "0px",
+      "type": "borderRadius",
+      "description": "项目全部使用尖角，无圆角"
+    }
+  }
+}

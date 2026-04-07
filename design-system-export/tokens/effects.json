@@ -1,0 +1,84 @@
+{
+  "borderWidth": {
+    "thin": {
+      "value": "1px",
+      "type": "borderWidth",
+      "description": "细边框 - Header, Footer分隔线"
+    },
+    "medium": {
+      "value": "2px",
+      "type": "borderWidth",
+      "description": "中等边框 - CTA按钮底部边框"
+    }
+  },
+  "transitions": {
+    "opacity": {
+      "value": "opacity 0.3s ease",
+      "type": "transition",
+      "description": "透明度过渡 - 悬停效果"
+    },
+    "transform": {
+      "value": "transform 0.5s ease",
+      "type": "transition",
+      "description": "变换过渡 - link下划线动画"
+    },
+    "colors": {
+      "value": "all 0.2s ease",
+      "type": "transition",
+      "description": "颜色过渡 - 表单焦点、按钮悬停"
+    }
+  },
+  "animations": {
+    "fade-up": {
+      "duration": "0.6s",
+      "easing": "ease-out",
+      "keyframes": {
+        "0%": {
+          "opacity": "0",
+          "transform": "translateY(2rem)"
+        },
+        "100%": {
+          "opacity": "1",
+          "transform": "translateY(0)"
+        }
+      },
+      "type": "animation",
+      "description": "淡入上升动画"
+    },
+    "fade-in": {
+      "duration": "0.4s",
+      "easing": "ease-out",
+      "keyframes": {
+        "0%": {
+          "opacity": "0"
+        },
+        "100%": {
+          "opacity": "1"
+        }
+      },
+      "type": "animation",
+      "description": "淡入动画"
+    },
+    "spin": {
+      "duration": "1s",
+      "easing": "linear",
+      "infinite": true,
+      "type": "animation",
+      "description": "旋转动画 - 加载spinner"
+    }
+  },
+  "shadows": {
+    "none": {
+      "value": "none",
+      "type": "boxShadow",
+      "description": "项目不使用阴影"
+    }
+  },
+  "gradients": {
+    "overlay-dark": {
+      "value": "linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 0, 0.5))",
+      "type": "gradient",
+      "description": "ProjectCard图片渐变叠加 - 底部深色"
+    }
+  }
+}

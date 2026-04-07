@@ -1,0 +1,116 @@
+{
+  "fontFamilies": {
+    "serif": {
+      "value": "Playfair Display, Palatino, Book Antiqua, Georgia, serif",
+      "type": "fontFamilies",
+      "description": "衬线字体 - 用于Logo、标题、项目标题、Contact标题"
+    },
+    "sans": {
+      "value": "Inter, Helvetica Neue, sans-serif",
+      "type": "fontFamilies",
+      "description": "无衬线字体 - 默认字体"
+    }
+  },
+  "fontSize": {
+    "base-html": {
+      "value": "62.5%",
+      "type": "fontSizes",
+      "description": "HTML根字体大小 - 1rem = 10px"
+    },
+    "footer-info": {
+      "value": "13px",
+      "type": "fontSizes",
+      "description": "Footer信息文字 (1.3rem)"
+    },
+    "project-card": {
+      "value": "14px",
+      "type": "fontSizes",
+      "description": "ProjectCard标题和副标题"
+    },
+    "base": {
+      "value": "15px",
+      "type": "fontSizes",
+      "description": "基础字体大小 (1.5rem) - body文字、表单输入"
+    },
+    "header-link": {
+      "value": "16px",
+      "type": "fontSizes",
+      "description": "Header链接、Services"
+    },
+    "introduction": {
+      "value": "20px",
+      "type": "fontSizes",
+      "description": "Introduction段落"
+    },
+    "logo": {
+      "value": "20px",
+      "type": "fontSizes",
+      "description": "Header Logo"
+    },
+    "heading-small": {
+      "value": "32px",
+      "type": "fontSizes",
+      "description": "小号标题 (3.2rem)"
+    },
+    "heading-medium": {
+      "value": "40px",
+      "type": "fontSizes",
+      "description": "中号标题 (4rem)"
+    },
+    "heading-large-mobile": {
+      "value": "48px",
+      "type": "fontSizes",
+      "description": "Contact Us标题 - 移动端 (4.8rem)"
+    },
+    "heading-large-desktop": {
+      "value": "60px",
+      "type": "fontSizes",
+      "description": "Contact Us标题 - 桌面端 (6rem)"
+    }
+  },
+  "fontWeights": {
+    "normal": {
+      "value": "400",
+      "type": "fontWeights",
+      "description": "常规字重"
+    },
+    "bold": {
+      "value": "700",
+      "type": "fontWeights",
+      "description": "粗体 - 用于CTA按钮"
+    }
+  },
+  "lineHeights": {
+    "tight": {
+      "value": "1.14",
+      "type": "lineHeights",
+      "description": "紧凑行高 (14/16 for ProjectCard)"
+    },
+    "base": {
+      "value": "1.5",
+      "type": "lineHeights",
+      "description": "基础行高"
+    },
+    "relaxed": {
+      "value": "1.7",
+      "type": "lineHeights",
+      "description": "宽松行高 - Footer信息"
+    }
+  },
+  "letterSpacing": {
+    "normal": {
+      "value": "0em",
+      "type": "letterSpacing"
+    },
+    "wide": {
+      "value": "0.1em",
+      "type": "letterSpacing",
+      "description": "用于Services标题、Footer标题"
+    },
+    "wider": {
+      "value": "0.15em",
+      "type": "letterSpacing",
+      "description": "用于Header链接、CTA按钮"
+    }
+  }
+}

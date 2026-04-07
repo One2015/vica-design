@@ -1,0 +1,71 @@
+{
+  "colors": {
+    "primary": {
+      "value": "#1a1a1a",
+      "type": "color",
+      "description": "主文字色 - 用于标题、正文、边框"
+    },
+    "secondary": {
+      "value": "#666666",
+      "type": "color",
+      "description": "次要文字 - 用于辅助信息"
+    },
+    "accent": {
+      "value": "#fcf6eb",
+      "type": "color",
+      "description": "页面背景、Header背景 - 温暖米色"
+    },
+    "border": {
+      "value": "#e3e2e2",
+      "type": "color",
+      "description": "分隔线颜色"
+    },
+    "warm": {
+      "value": "#BD7D31",
+      "type": "color",
+      "description": "强调色 - Footer背景、Contact区域"
+    },
+    "white": {
+      "value": "#ffffff",
+      "type": "color",
+      "description": "白色 - 用于深色背景上的文字"
+    },
+    "black": {
+      "value": "#000000",
+      "type": "color",
+      "description": "纯黑 - 用于渐变叠加"
+    }
+  },
+  "opacity": {
+    "border-subtle": {
+      "value": "0.1",
+      "type": "opacity",
+      "description": "Header 边框透明度"
+    },
+    "overlay-dark": {
+      "value": "0.5",
+      "type": "opacity",
+      "description": "ProjectCard 渐变叠加"
+    },
+    "hover": {
+      "value": "0.6",
+      "type": "opacity",
+      "description": "悬停状态透明度"
+    },
+    "placeholder": {
+      "value": "0.6",
+      "type": "opacity",
+      "description": "表单占位符透明度"
+    },
+    "form-border": {
+      "value": "0.4",
+      "type": "opacity",
+      "description": "表单边框透明度"
+    },
+    "text-secondary": {
+      "value": "0.8",
+      "type": "opacity",
+      "description": "次要文字透明度"
+    }
+  }
+}
