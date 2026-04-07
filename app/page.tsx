@@ -1,101 +1,209 @@
-import Image from "next/image";
+import Image from 'next/image'
+import Link from 'next/link'
+import { ContactForm } from '@/components/ContactForm'
 
-export default function Home() {
+// Placeholder project data — replace with real data/CMS later
+const featuredProjects = [
+  {
+    slug: 'hawthorn-house',
+    title: 'Hawthorn House',
+    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    layout: 'landscape' as const,
+    image: '/images/hero.png',
+    imageMobile: '/images/hero.png',
+  },
+  {
+    slug: 'golden-light',
+    title: 'Golden Light',
+    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    layout: 'portrait' as const,
+    image: '/images/placeholder-portrait.jpg',
+    imageMobile: '/images/placeholder-portrait.jpg',
+  },
+  {
+    slug: 'bradleys-head',
+    title: 'Bradleys Head House',
+    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    layout: 'portrait' as const,
+    image: '/images/placeholder-portrait.jpg',
+    imageMobile: '/images/placeholder-portrait.jpg',
+  },
+  {
+    slug: 'mosman-residence',
+    title: 'Mosman Residence',
+    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    layout: 'landscape' as const,
+    image: '/images/placeholder-landscape.jpg',
+    imageMobile: '/images/placeholder-portrait.jpg',
+  },
+  {
+    slug: 'paddington-terrace',
+    title: 'Paddington Terrace',
+    role: 'Interior Decoration, Furniture Selection and Art Curation',
+    layout: 'portrait' as const,
+    image: '/images/placeholder-portrait.jpg',
+    imageMobile: '/images/placeholder-portrait.jpg',
+  },
+  {
+    slug: 'bondi-beach-house',
+    title: 'Bondi Beach House',
+    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    layout: 'portrait' as const,
+    image: '/images/placeholder-portrait.jpg',
+    imageMobile: '/images/placeholder-portrait.jpg',
+  },
+]
+
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="overflow-hidden">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+      {/* ═══ 前 3 个项目 ═══ */}
+      <ProjectGrid projects={featuredProjects.slice(0, 3)} />
+
+      {/* ═══ Introduction 文字 - 20px ═══ */}
+      <div className="px-page py-[12rem]">
+        <p className="font-serif text-[20px] leading-[32px] max-w-[60rem] ml-auto text-right">
+          At VICA DESIGN, space is not merely functional — it is a reflection of identity.
+          We design and craft high-end custom kitchens and fully integrated millwork systems
+          for discerning homeowners and builders. Every project begins with proportion and
+          ends in precision. Guided by design and elevated by craftsmanship, we bring together
+          form, material, light, and balance to create spaces defined by quiet sophistication.
+        </p>
+      </div>
+
+      {/* ═══ Services 服务列表 ═══ */}
+      <div className="px-page pb-[16rem]">
+        <div className="flex flex-col md:flex-row gap-[2rem]">
+          <div className="md:w-1/2 flex gap-[2rem]">
+            <ServiceGroup
+              title="Custom Millwork"
+              items={[
+                'High-end custom kitchens',
+                'Architectural millwork systems',
+                'Wine rooms & storage',
+                'Wardrobes & closet systems',
+                'Fireplace features',
+              ]}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <ServiceGroup
+              title="Design & Craft"
+              items={[
+                'Spatial planning & design',
+                'Material selection',
+                'Hardware refinement',
+                '100% Canadian-made',
+                'Full project management',
+              ]}
+            />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </div>
+
+      {/* ═══ 后 3 个项目 ═══ */}
+      <ProjectGrid projects={featuredProjects.slice(3, 6)} />
+
+      {/* ═══ Contact Us + Footer ═══ */}
+      <footer className="bg-[#2f3532] text-white">
+
+        {/* Contact 表单区 */}
+        <div className="py-[10rem] px-page text-center">
+          <h2 className="font-serif text-[6rem] mb-[2rem]">
+            Contact us
+          </h2>
+          <p className="text-[1.6rem] text-white/80 mb-[5rem]">
+            Thank you for your enquiry to VICA design.
+          </p>
+          <ContactForm />
+        </div>
+
+        {/* Footer 信息栏 */}
+        <div className="px-page pb-[4rem] flex flex-col md:flex-row justify-between items-start text-[1.3rem] leading-[1.9] text-white/80">
+          <div>
+            <p className="uppercase tracking-[0.325px] text-white mb-[0.5rem]">TORONTO</p>
+            <p>450 Matheson Blvd E, unit 59, 67-70</p>
+            <p>Mississauga, ON L4Z 1P1</p>
+            <p>+1 437-999-1137</p>
+          </div>
+          <div className="mt-[3rem] md:mt-0 text-left md:text-right">
+            <p className="uppercase tracking-[0.325px] text-white mb-[0.5rem]">SOCIAL</p>
+            <a href="https://instagram.com/vicadesign" target="_blank" rel="noopener noreferrer" className="block hover:opacity-60 transition-opacity">Instagram</a>
+            <a href="https://youtube.com/@vicadesign" target="_blank" rel="noopener noreferrer" className="block hover:opacity-60 transition-opacity">YouTube</a>
+            <a href="https://linkedin.com/company/vicadesign" target="_blank" rel="noopener noreferrer" className="block hover:opacity-60 transition-opacity">LinkedIn</a>
+          </div>
+        </div>
+
       </footer>
+
     </div>
-  );
+  )
+}
+
+function ProjectGrid({ projects }: { projects: typeof featuredProjects }) {
+  return (
+    <ul className="flex flex-wrap gap-[0.4rem]">
+      {projects.map((project) => (
+        <li
+          key={project.slug}
+          className={[
+            'relative',
+            project.layout === 'landscape'
+              ? 'w-full'
+              : 'w-full md:w-[calc(50%-0.2rem)]',
+          ].join(' ')}
+        >
+          <Link
+            href={`/projects/${project.slug}`}
+            className="block relative group"
+          >
+            <figure
+              className={[
+                'relative overflow-hidden bg-stone-200',
+                project.layout === 'landscape' ? 'h-[80vw] md:h-[80vh]' : 'h-[128vw] md:h-[80vh]',
+              ].join(' ')}
+            >
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 100vw"
+                quality={95}
+                unoptimized
+                className="object-cover"
+                priority={true}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50" />
+              {/* Hover overlay - 10% black */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </figure>
+            <div className="absolute bottom-0 left-0 right-0 text-center text-white pb-[5.6rem] pt-[5.6rem]">
+              <h2 className="text-[14px] leading-[16px] uppercase tracking-normal font-serif m-0 p-0 relative z-10">
+                {project.title}
+              </h2>
+              <p className="text-[14px] leading-[16px] italic font-serif m-0 mt-[2px] p-0 relative z-10 opacity-90">
+                {project.role}
+              </p>
+            </div>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function ServiceGroup({ title, items }: { title: string; items: string[] }) {
+  return (
+    <div className="flex-1">
+      <h3 className="font-serif text-[15px] uppercase tracking-[1.5px] border-t border-[#1a1a1a]/20 pt-[2rem] mb-[1.5rem]">
+        {title}
+      </h3>
+      <ul className="space-y-[0.5rem] list-none">
+        {items.map((item) => (
+          <li key={item} className="font-serif text-[15px] leading-[22.5px] text-[#1a1a1a]">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
