@@ -44,7 +44,7 @@ const featuredProjects = [
     title: 'Bondi Beach House',
     role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/bondi-beach-house.jpg',
+    image: '/images/bondi-beach-house-cover.png',
   },
 ]
 
