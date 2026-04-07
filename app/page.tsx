@@ -53,7 +53,7 @@ export default function HomePage() {
     <div className="overflow-hidden bg-[#fcf6eb]">
 
       {/* ═══ Hero Project (Hawthorn House) ═══ */}
-      <ProjectCard project={featuredProjects[0]} priority />
+      <ProjectCard project={featuredProjects[0]} priority className="mb-[4px]" />
 
       {/* ═══ Two Portrait Projects (Golden Light + Bradleys Head) ═══ */}
       <div className="flex gap-[4px]">
