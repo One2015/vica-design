@@ -177,7 +177,10 @@ function ProjectCard({
   const aspectRatio = isLandscape ? '48.8%' : '82.9%'
 
   return (
-    <div className={`relative ${className}`}>
+    <Link
+      href={`/projects/${project.slug}`}
+      className={`relative block group ${className}`}
+    >
       <figure className="relative w-full overflow-hidden bg-stone-200" style={{ paddingBottom: aspectRatio }}>
         <Image
           src={project.image}
@@ -191,20 +194,20 @@ function ProjectCard({
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50" />
 
-        {/* Text overlay */}
-        <Link
-          href={`/projects/${project.slug}`}
-          className="absolute bottom-0 left-0 right-0 text-center text-white pt-[56px] pb-[56px]"
-        >
-          <h2 className="font-serif text-[14px] leading-[16px] uppercase mb-[2px]">
-            {project.title}
-          </h2>
-          <p className="font-serif italic text-[14px] leading-[16px] opacity-90">
-            {project.role}
-          </p>
-        </Link>
+        {/* Hover black overlay */}
+        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
       </figure>
-    </div>
+
+      {/* Text overlay */}
+      <div className="absolute bottom-0 left-0 right-0 text-center text-white pt-[56px] pb-[56px] z-10 pointer-events-none">
+        <h2 className="font-serif text-[14px] leading-[16px] uppercase mb-[2px]">
+          {project.title}
+        </h2>
+        <p className="font-serif italic text-[14px] leading-[16px] opacity-90">
+          {project.role}
+        </p>
+      </div>
+    </Link>
   )
 }
 
