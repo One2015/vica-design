@@ -1,265 +1,274 @@
 {
-  "$schema": "https://schemas.figmatokens.com/tokens.json",
-  "global": {
-    "colors": {
-      "brand": {
-        "primary": {
-          "value": "#BD7D31",
-          "type": "color",
-          "description": "暖棕色 - Footer背景、Contact区域、强调元素"
-        },
-        "background": {
-          "value": "#fcf6eb",
-          "type": "color",
-          "description": "米白色 - 页面背景、Header背景"
-        },
-        "text-primary": {
-          "value": "#1a1a1a",
-          "type": "color",
-          "description": "深黑色 - 主要文字"
-        },
-        "text-secondary": {
-          "value": "#666666",
-          "type": "color",
-          "description": "次要文字 - Services列表项"
-        }
-      },
-      "border": {
-        "light": {
-          "value": "rgba(26, 26, 26, 0.1)",
-          "type": "color",
-          "description": "Header底部细线"
-        },
-        "medium": {
-          "value": "rgba(26, 26, 26, 0.2)",
-          "type": "color",
-          "description": "Footer分隔线"
-        },
-        "default": {
-          "value": "#e3e2e2",
-          "type": "color",
-          "description": "Services标题顶部线"
-        }
-      },
-      "white": {
-        "value": "#ffffff",
-        "type": "color"
-      },
-      "overlay": {
-        "card-gradient-end": {
-          "value": "rgba(0, 0, 0, 0.5)",
-          "type": "color",
-          "description": "ProjectCard底部黑色渐变终点"
-        }
-      }
+  "$schema": "https://schemas.tokens.studio/1.0.0",
+  "colors": {
+    "primary": {
+      "value": "#1a1a1a",
+      "type": "color",
+      "description": "主文字色 - 用于标题、正文、边框"
     },
-    "typography": {
-      "fontFamilies": {
-        "serif": {
-          "value": "Playfair Display",
-          "type": "fontFamilies",
-          "description": "主字体 - Logo、标题、项目名、Contact标题"
-        },
-        "sans": {
-          "value": "Inter",
-          "type": "fontFamilies",
-          "description": "辅助字体 - 正文备用"
-        }
-      },
-      "fontSizes": {
-        "13": {
-          "value": "13px",
-          "type": "fontSizes",
-          "description": "Footer信息栏文字"
-        },
-        "14": {
-          "value": "14px",
-          "type": "fontSizes",
-          "description": "ProjectCard 标题 & 副标题"
-        },
-        "15": {
-          "value": "15px",
-          "type": "fontSizes",
-          "description": "表单输入框文字"
-        },
-        "16": {
-          "value": "16px",
-          "type": "fontSizes",
-          "description": "Services标题/列表、Header Contact Us"
-        },
-        "20": {
-          "value": "20px",
-          "type": "fontSizes",
-          "description": "Introduction段落、Header Logo"
-        },
-        "32": {
-          "value": "32px",
-          "type": "fontSizes",
-          "description": "Contact成功标题 (mobile)"
-        },
-        "40": {
-          "value": "40px",
-          "type": "fontSizes",
-          "description": "Contact成功标题 (desktop)"
-        },
-        "48": {
-          "value": "48px",
-          "type": "fontSizes",
-          "description": "Contact Us 标题 (mobile)"
-        },
-        "60": {
-          "value": "60px",
-          "type": "fontSizes",
-          "description": "Contact Us 标题 (desktop)"
-        }
-      },
-      "lineHeights": {
-        "tight": {
-          "value": "16px",
-          "type": "lineHeights",
-          "description": "ProjectCard 标题行高"
-        },
-        "normal": {
-          "value": "150%",
-          "type": "lineHeights",
-          "description": "标准行高 - body"
-        },
-        "relaxed": {
-          "value": "160%",
-          "type": "lineHeights",
-          "description": "Introduction段落行高"
-        },
-        "loose": {
-          "value": "190%",
-          "type": "lineHeights",
-          "description": "Footer信息栏行高"
-        }
-      },
-      "fontWeights": {
-        "normal": {
-          "value": "400",
-          "type": "fontWeights",
-          "description": "默认字重"
-        },
-        "semibold": {
-          "value": "600",
-          "type": "fontWeights",
-          "description": "Footer VICA DESIGN标签"
-        },
-        "bold": {
-          "value": "700",
-          "type": "fontWeights"
-        }
-      },
-      "letterSpacing": {
-        "normal": {
-          "value": "0",
-          "type": "letterSpacing"
-        },
-        "wide": {
-          "value": "0.05em",
-          "type": "letterSpacing",
-          "description": "Services标题 tracking"
-        },
-        "wider": {
-          "value": "0.1em",
-          "type": "letterSpacing",
-          "description": "uppercase标签"
-        },
-        "widest": {
-          "value": "0.15em",
-          "type": "letterSpacing",
-          "description": "SUBMIT按钮、Contact Us链接"
-        }
-      }
+    "secondary": {
+      "value": "#666666",
+      "type": "color",
+      "description": "次要文字 - 用于辅助信息"
     },
-    "spacing": {
-      "4": {
-        "value": "4px",
-        "type": "spacing",
-        "description": "0.4rem - ProjectCard间距gap"
-      },
-      "20": {
-        "value": "20px",
-        "type": "spacing",
-        "description": "2rem - Header上下padding、小间距"
-      },
-      "40": {
-        "value": "40px",
-        "type": "spacing",
-        "description": "4rem - 中等间距、Services两组间距"
-      },
-      "56": {
-        "value": "56px",
-        "type": "spacing",
-        "description": "5.6rem - Section上下padding"
-      },
-      "60": {
-        "value": "60px",
-        "type": "spacing",
-        "description": "6rem - Footer主区域padding"
-      },
-      "80": {
-        "value": "80px",
-        "type": "spacing",
-        "description": "8rem - Contact区域padding (mobile)"
-      },
-      "100": {
-        "value": "100px",
-        "type": "spacing",
-        "description": "10rem - Contact表单区padding"
-      },
-      "120": {
-        "value": "120px",
-        "type": "spacing",
-        "description": "12rem - Introduction首行缩进"
-      }
+    "accent": {
+      "value": "#fcf6eb",
+      "type": "color",
+      "description": "页面背景、Header背景 - 温暖米色"
     },
-    "sizing": {
-      "header-height": {
-        "value": "70px",
-        "type": "sizing",
-        "description": "7rem - Header固定高度"
-      },
-      "max-width-text": {
-        "value": "600px",
-        "type": "sizing",
-        "description": "60rem - Introduction最大宽度"
-      },
-      "max-width-form": {
-        "value": "500px",
-        "type": "sizing",
-        "description": "50rem - 表单最大宽度"
-      },
-      "max-width-footer": {
-        "value": "1400px",
-        "type": "sizing",
-        "description": "140rem - Footer内容最大宽度"
-      }
+    "border": {
+      "value": "#e3e2e2",
+      "type": "color",
+      "description": "分隔线颜色"
     },
-    "borderRadius": {
-      "none": {
-        "value": "0",
-        "type": "borderRadius",
-        "description": "全站无圆角设计"
-      }
+    "warm": {
+      "value": "#BD7D31",
+      "type": "color",
+      "description": "强调色 - Footer背景、Contact区域"
     },
-    "transition": {
-      "fast": {
-        "value": "opacity 200ms ease",
-        "type": "other",
-        "description": "Hover opacity - 快速"
-      },
-      "normal": {
-        "value": "all 300ms ease",
-        "type": "other",
-        "description": "标准过渡"
-      },
-      "slow": {
-        "value": "all 400ms ease",
-        "type": "other",
-        "description": "页面级动画"
-      }
+    "white": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "black": {
+      "value": "#000000",
+      "type": "color"
+    }
+  },
+  "opacity": {
+    "border-subtle": {
+      "value": "10%",
+      "type": "opacity",
+      "description": "Header 边框透明度"
+    },
+    "overlay-dark": {
+      "value": "50%",
+      "type": "opacity",
+      "description": "ProjectCard 渐变叠加"
+    },
+    "hover": {
+      "value": "60%",
+      "type": "opacity",
+      "description": "悬停状态透明度"
+    },
+    "placeholder": {
+      "value": "60%",
+      "type": "opacity",
+      "description": "表单占位符透明度"
+    },
+    "form-border": {
+      "value": "40%",
+      "type": "opacity",
+      "description": "表单边框透明度"
+    },
+    "text-secondary": {
+      "value": "80%",
+      "type": "opacity",
+      "description": "次要文字透明度"
+    }
+  },
+  "fontFamilies": {
+    "serif": {
+      "value": "Playfair Display",
+      "type": "fontFamilies",
+      "description": "衬线字体 - 用于Logo、标题、项目标题、Contact标题"
+    },
+    "sans": {
+      "value": "Inter",
+      "type": "fontFamilies",
+      "description": "无衬线字体 - 默认字体"
+    }
+  },
+  "fontSize": {
+    "13": {
+      "value": "13px",
+      "type": "fontSizes",
+      "description": "Footer信息文字"
+    },
+    "14": {
+      "value": "14px",
+      "type": "fontSizes",
+      "description": "ProjectCard标题和副标题"
+    },
+    "15": {
+      "value": "15px",
+      "type": "fontSizes",
+      "description": "基础字体大小 - body文字、表单输入"
+    },
+    "16": {
+      "value": "16px",
+      "type": "fontSizes",
+      "description": "Header链接、Services"
+    },
+    "20": {
+      "value": "20px",
+      "type": "fontSizes",
+      "description": "Introduction段落、Logo"
+    },
+    "32": {
+      "value": "32px",
+      "type": "fontSizes",
+      "description": "小号标题"
+    },
+    "40": {
+      "value": "40px",
+      "type": "fontSizes",
+      "description": "中号标题"
+    },
+    "48": {
+      "value": "48px",
+      "type": "fontSizes",
+      "description": "Contact Us标题 - 移动端"
+    },
+    "60": {
+      "value": "60px",
+      "type": "fontSizes",
+      "description": "Contact Us标题 - 桌面端"
+    }
+  },
+  "fontWeights": {
+    "normal": {
+      "value": "400",
+      "type": "fontWeights"
+    },
+    "bold": {
+      "value": "700",
+      "type": "fontWeights"
+    }
+  },
+  "lineHeights": {
+    "tight": {
+      "value": "114%",
+      "type": "lineHeights",
+      "description": "紧凑行高 (ProjectCard)"
+    },
+    "base": {
+      "value": "150%",
+      "type": "lineHeights",
+      "description": "基础行高"
+    },
+    "relaxed": {
+      "value": "170%",
+      "type": "lineHeights",
+      "description": "宽松行高 - Footer信息"
+    }
+  },
+  "letterSpacing": {
+    "normal": {
+      "value": "0em",
+      "type": "letterSpacing"
+    },
+    "wide": {
+      "value": "0.1em",
+      "type": "letterSpacing",
+      "description": "用于Services标题、Footer标题"
+    },
+    "wider": {
+      "value": "0.15em",
+      "type": "letterSpacing",
+      "description": "用于Header链接、CTA按钮"
+    }
+  },
+  "spacing": {
+    "page-horizontal": {
+      "value": "clamp(15px, 5vw, 60px)",
+      "type": "spacing",
+      "description": "全站水平padding - 响应式"
+    },
+    "0": {
+      "value": "0px",
+      "type": "spacing"
+    },
+    "4": {
+      "value": "4px",
+      "type": "spacing",
+      "description": "ProjectCard gap"
+    },
+    "10": {
+      "value": "10px",
+      "type": "spacing"
+    },
+    "15": {
+      "value": "15px",
+      "type": "spacing"
+    },
+    "20": {
+      "value": "20px",
+      "type": "spacing",
+      "description": "Header padding, 表单间距"
+    },
+    "30": {
+      "value": "30px",
+      "type": "spacing",
+      "description": "按钮padding"
+    },
+    "40": {
+      "value": "40px",
+      "type": "spacing"
+    },
+    "50": {
+      "value": "50px",
+      "type": "spacing",
+      "description": "Footer copyright margin"
+    },
+    "56": {
+      "value": "56px",
+      "type": "spacing",
+      "description": "Introduction/Services padding"
+    },
+    "60": {
+      "value": "60px",
+      "type": "spacing",
+      "description": "Footer padding"
+    },
+    "70": {
+      "value": "70px",
+      "type": "spacing",
+      "description": "Header固定高度"
+    },
+    "100": {
+      "value": "100px",
+      "type": "spacing",
+      "description": "Contact section padding"
+    }
+  },
+  "sizing": {
+    "max-width-content": {
+      "value": "1560px",
+      "type": "sizing",
+      "description": "内容最大宽度"
+    },
+    "max-width-wide": {
+      "value": "1860px",
+      "type": "sizing",
+      "description": "宽屏内容最大宽度"
+    },
+    "max-width-form": {
+      "value": "500px",
+      "type": "sizing",
+      "description": "表单最大宽度"
+    },
+    "card-height-desktop": {
+      "value": "80vh",
+      "type": "sizing",
+      "description": "ProjectCard高度 - 桌面端"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "value": "0px",
+      "type": "borderRadius",
+      "description": "项目全部使用尖角"
+    }
+  },
+  "borderWidth": {
+    "thin": {
+      "value": "1px",
+      "type": "borderWidth"
+    },
+    "medium": {
+      "value": "2px",
+      "type": "borderWidth"
     }
   }
 }
