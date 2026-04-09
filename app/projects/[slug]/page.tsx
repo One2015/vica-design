@@ -56,39 +56,41 @@ export default async function ProjectDetailPage({
       </div>
 
       {/* ── Body ── */}
-      <div className="px-page max-w-content mx-auto hero-section">
+      <section className="px-page">
+        <div className="max-w-content mx-auto">
 
-        {/* Title + Intro (desktop: side by side) */}
-        <div className="pt-[3.8rem] lg:pt-[6.5rem] lg:grid lg:grid-cols-2 lg:gap-[3rem] lg:items-start">
+          {/* Title + Intro (desktop: side by side) */}
+          <div className="pt-[3.8rem] lg:pt-[6.5rem] lg:grid lg:grid-cols-2 lg:gap-[3rem] lg:items-start">
 
-          {/* Title */}
-          <h1 className="project-title font-serif text-[clamp(2.5rem,5vw,5.8rem)] leading-[1.05] mb-[4rem] lg:mb-0">
-            {project.title}
-          </h1>
+            {/* Title */}
+            <h1 className="project-title font-serif text-[clamp(2.5rem,5vw,5.8rem)] leading-[1.05] mb-[4rem] lg:mb-0">
+              {project.title}
+            </h1>
 
-          {/* Intro text */}
-          <p className="font-serif text-[20px] leading-[32px] lg:indent-[12rem]">
-            {project.intro}
-          </p>
-        </div>
-
-        {/* Specifications */}
-        <FadeInSection delay={0.3}>
-          <div className="mt-[3rem] lg:mt-[4rem] pb-[4rem] border-b border-border">
-            <dl className="flex flex-wrap gap-x-[6rem] gap-y-[2rem]">
-              <Spec label="Location" value={project.location} />
-              <Spec label="Year" value={project.year} />
-              <Spec label="Studio Role" value={project.studioRole} />
-            </dl>
+            {/* Intro text */}
+            <p className="font-serif text-[20px] leading-[32px] lg:indent-[12rem]">
+              {project.intro}
+            </p>
           </div>
-        </FadeInSection>
 
-        {/* Gallery */}
-        <div className="py-[8rem]">
-          <GallerySection items={project.gallery} />
+          {/* Specifications */}
+          <FadeInSection delay={0.3}>
+            <div className="mt-[3rem] lg:mt-[4rem] pb-[4rem] border-b border-border">
+              <dl className="flex flex-wrap gap-x-[6rem] gap-y-[2rem]">
+                <Spec label="Location" value={project.location} />
+                <Spec label="Year" value={project.year} />
+                <Spec label="Studio Role" value={project.studioRole} />
+              </dl>
+            </div>
+          </FadeInSection>
+
+          {/* Gallery */}
+          <div className="py-[8rem]">
+            <GallerySection items={project.gallery} />
+          </div>
+
         </div>
-
-      </div>
+      </section>
 
       {/* ── Related projects ── */}
       {related.length > 0 && (
