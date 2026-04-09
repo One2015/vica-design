@@ -10,6 +10,7 @@ interface ImageParallaxProps {
   /** Aspect ratio class, e.g. "aspect-video" or "aspect-[4/3]". Defaults to aspect-video. */
   aspectClass?: string
   priority?: boolean
+  quality?: number
 }
 
 export function ImageParallax({
@@ -17,6 +18,7 @@ export function ImageParallax({
   alt,
   aspectClass = 'aspect-video',
   priority = false,
+  quality = 95,
 }: ImageParallaxProps) {
   const ref = useRef<HTMLDivElement>(null)
 
@@ -40,6 +42,7 @@ export function ImageParallax({
           alt={alt}
           fill
           priority={priority}
+          quality={quality}
           sizes="100vw"
           className="object-cover"
         />

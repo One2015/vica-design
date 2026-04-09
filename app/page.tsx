@@ -2,49 +2,49 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ContactForm } from '@/components/ContactForm'
 
-// Project data based on Figma design
+// Homepage featured projects with original images
 const featuredProjects = [
   {
-    slug: 'hawthorn-house',
-    title: 'Hawthorn House',
-    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    slug: 'modern-kitchen',
+    title: 'Modern Kitchen',
+    studioRole: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'landscape' as const,
-    image: '/images/hawthorn-house.jpg',
+    cardImage: '/images/场景 2.1.png',
   },
   {
     slug: 'golden-light',
     title: 'Golden Light',
-    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    studioRole: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/golden-light.jpg',
+    cardImage: '/images/golden-light.jpg',
   },
   {
-    slug: 'bradleys-head',
+    slug: 'bradleys-head-house',
     title: 'Bradleys Head House',
-    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    studioRole: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/bradleys-head.jpg',
+    cardImage: '/images/bradleys-head.jpg',
   },
   {
-    slug: 'mosman-residence',
-    title: 'Mosman Residence',
-    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    slug: 'hawthorn-house',
+    title: 'Hawthorn House',
+    studioRole: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'landscape' as const,
-    image: '/images/mosman-residence.jpg',
+    cardImage: '/images/hawthorn-house.jpg',
   },
   {
-    slug: 'paddington-terrace',
-    title: 'Paddington Terrace',
-    role: 'Interior Decoration, Furniture Selection and Art Curation',
+    slug: 'speargrass-house',
+    title: 'Speargrass House',
+    studioRole: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/paddington-terrace.jpg',
+    cardImage: '/images/paddington-terrace.jpg',
   },
   {
-    slug: 'bondi-beach-house',
-    title: 'Bondi Beach House',
-    role: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    slug: 'garden-house',
+    title: 'Garden House',
+    studioRole: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
     layout: 'portrait' as const,
-    image: '/images/bondi-beach-house-cover.png',
+    cardImage: '/images/bondi-beach-house-cover.png',
   },
 ]
 
@@ -183,13 +183,14 @@ function ProjectCard({
     >
       <figure className="relative w-full overflow-hidden bg-stone-200" style={{ paddingBottom: aspectRatio }}>
         <Image
-          src={project.image}
+          src={project.cardImage}
           alt={project.title}
           fill
           sizes={isLandscape ? "100vw" : "(max-width: 768px) 100vw, 50vw"}
           quality={100}
           priority={priority}
           className="absolute inset-0 object-cover"
+          style={{ objectFit: 'cover' }}
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/50" />
@@ -204,7 +205,7 @@ function ProjectCard({
           {project.title}
         </h2>
         <p className="font-serif italic text-[14px] leading-[16px] opacity-90">
-          {project.role}
+          {project.studioRole}
         </p>
       </div>
     </Link>

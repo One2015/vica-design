@@ -256,6 +256,57 @@ export const projects: Project[] = [
     ] satisfies GalleryItem[],
     related: ['speargrass-house', 'hawthorn-house'],
   },
+
+  {
+    slug: 'modern-kitchen',
+    title: 'Modern Kitchen — Warm Wood & Marble',
+    location: 'Toronto, ON',
+    year: '2024',
+    studioRole: 'Full Interior Design, Custom Fabrication, Furnishing and Art',
+    layout: 'landscape',
+    cardImage: '/images/场景 2.1.png',
+    heroImage: '/images/场景 2.1.png',
+    heroImageAlt: 'Modern kitchen with dramatic chandelier',
+    intro:
+      'A contemporary kitchen designed around the interplay of natural wood and luxurious marble. The dramatic crystal chandelier anchors the space, while black upper cabinetry creates striking contrast against warm oak base units.',
+    gallery: [
+      {
+        type: 'single',
+        image: '/images/场景 2.7.png',
+        alt: 'Kitchen island with four brass bar stools',
+        caption: 'The island serves as both functional workspace and social hub, with seating for four.',
+        parallax: true,
+      },
+      {
+        type: 'double',
+        images: [
+          { src: '/images/3.png', alt: 'Island view with marble countertop' },
+          { src: '/images/4.png', alt: 'Detailed view of island with decorative vase' },
+        ],
+      },
+      {
+        type: 'single',
+        image: '/images/1.png',
+        alt: 'Window workspace with marble backsplash',
+        parallax: false,
+        quality: 100,
+      },
+      {
+        type: 'doubleWithText',
+        image: { src: '/images/场景 7(1).png', alt: 'Full kitchen workstation view' },
+        text: 'Material selection focused on timeless quality — book-matched marble, ribbed oak cabinetry, and integrated LED lighting throughout.',
+        imagePosition: 'left',
+      },
+      {
+        type: 'double',
+        images: [
+          { src: '/images/场景 5.png', alt: 'Open layout perspective' },
+          { src: '/images/场景 2.3.png', alt: 'Natural light and shadow play' },
+        ],
+      },
+    ] satisfies GalleryItem[],
+    related: ['hawthorn-house', 'garden-house'],
+  },
 ]
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
