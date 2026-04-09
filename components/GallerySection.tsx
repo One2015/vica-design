@@ -176,7 +176,7 @@ function CarouselRow({ item }: { item: Extract<GalleryItem, { type: 'carousel' }
   const imageQuality = item.quality ?? 95
   return (
     <div className="relative">
-      {/* Horizontal scroll container */}
+      {/* Horizontal scroll container - max 2 images visible at once */}
       <div className="flex gap-[2rem] overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
         {item.images.map((img, i) => (
           <ImageWithHover
@@ -185,8 +185,8 @@ function CarouselRow({ item }: { item: Extract<GalleryItem, { type: 'carousel' }
             alt={img.alt ?? ''}
             quality={imageQuality}
             delay={i * 0.1}
-            sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw, 33vw"
-            className="flex-none w-[80vw] md:w-[50vw] lg:w-[33vw] snap-start relative aspect-[3/4]"
+            sizes="(max-width: 768px) 80vw, 50vw"
+            className="flex-none w-[80vw] md:w-[calc(50%-1rem)] snap-start relative aspect-[3/4]"
           />
         ))}
       </div>
