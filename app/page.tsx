@@ -137,7 +137,7 @@ export default function HomePage() {
         </div>
 
         {/* Footer info bar */}
-        <div className="px-page pb-[40px] flex justify-between items-start text-[13px] leading-[24.7px] text-white/80">
+        <div className="px-page pb-[40px] flex justify-between items-start text-[14px] leading-[24.7px] text-white/80">
           <div>
             <p className="uppercase tracking-[0.325px] text-white mb-0">TORONTO</p>
             <p className="mt-[5px]">450 Matheson Blvd E, unit 59, 67-70</p>

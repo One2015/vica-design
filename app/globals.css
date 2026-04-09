@@ -93,7 +93,7 @@
 
   /* CTA button */
   .btn-cta {
-    @apply inline-block text-[1.3rem] font-bold tracking-[0.15em] uppercase;
+    @apply inline-block text-[1.4rem] font-bold tracking-[0.15em] uppercase;
     padding: 0.8rem 0;
     border-bottom: 2px solid currentColor;
     transition: opacity 0.3s ease;

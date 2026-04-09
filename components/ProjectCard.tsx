@@ -36,7 +36,7 @@ export function ProjectCard({ title, role, slug, image, layout, priority = false
               <h3 className="font-serif text-[20px] leading-tight mb-2">
                 {title}
               </h3>
-              <p className="text-[13px] uppercase tracking-[0.12em] opacity-80">
+              <p className="text-[14px] uppercase tracking-[0.12em] opacity-80">
                 {role}
               </p>
             </div>

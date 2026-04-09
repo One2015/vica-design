@@ -129,7 +129,7 @@ export default async function ProjectDetailPage({
 function Spec({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="text-[13px] uppercase tracking-[0.1em] mb-[0.3rem] text-secondary">
+      <dt className="text-[14px] uppercase tracking-[0.1em] mb-[0.3rem] text-secondary">
         {label}
       </dt>
       <dd className="text-[16px]">{value}</dd>
@@ -151,7 +151,7 @@ function RelatedNav({ currentSlug }: { currentSlug: string }) {
           href={`/projects/${prev.slug}`}
           className="nav-link text-left max-w-[45%]"
         >
-          <span className="block text-[13px] uppercase tracking-[0.1em] text-secondary mb-2">
+          <span className="block text-[14px] uppercase tracking-[0.1em] text-secondary mb-2">
             Previous
           </span>
           <span className="block font-serif text-[20px] leading-tight">
@@ -167,7 +167,7 @@ function RelatedNav({ currentSlug }: { currentSlug: string }) {
           href={`/projects/${next.slug}`}
           className="nav-link text-right max-w-[45%]"
         >
-          <span className="block text-[13px] uppercase tracking-[0.1em] text-secondary mb-2">
+          <span className="block text-[14px] uppercase tracking-[0.1em] text-secondary mb-2">
             Next
           </span>
           <span className="block font-serif text-[20px] leading-tight">

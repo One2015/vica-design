@@ -139,7 +139,7 @@ export default function AboutPage() {
                 },
               ].map((group) => (
                 <div key={group.title}>
-                  <h3 className="text-[1.3rem] uppercase tracking-[0.12em] border-t border-border pt-[1.5rem] mb-[1.5rem]">
+                  <h3 className="text-[1.4rem] uppercase tracking-[0.12em] border-t border-border pt-[1.5rem] mb-[1.5rem]">
                     {group.title}
                   </h3>
                   <ul className="space-y-[0.5rem]">
@@ -184,8 +184,8 @@ export default function AboutPage() {
 
                 {/* Name */}
                 <div className="p-[2rem]">
-                  <p className="text-[1.3rem] uppercase tracking-[0.1em]">{member.name}</p>
-                  <p className="font-serif italic text-[1.3rem] text-secondary mt-[0.3rem]">
+                  <p className="text-[1.4rem] uppercase tracking-[0.1em]">{member.name}</p>
+                  <p className="font-serif italic text-[1.4rem] text-secondary mt-[0.3rem]">
                     {member.title}
                   </p>
                 </div>
@@ -208,7 +208,7 @@ export default function AboutPage() {
             {awards.map((a) => (
               <li
                 key={a.award}
-                className="flex gap-[3rem] text-[1.3rem] pb-[1.5rem] border-b border-border"
+                className="flex gap-[3rem] text-[1.4rem] pb-[1.5rem] border-b border-border"
               >
                 <span className="text-secondary shrink-0 w-[4rem]">{a.year}</span>
                 <span>{a.award}</span>

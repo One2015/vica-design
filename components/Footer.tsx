@@ -10,8 +10,8 @@ export function Footer() {
 
           {/* Contact */}
           <section className="w-full sm:w-[calc(50%-1.5rem)] lg:w-auto">
-            <h3 className="text-[1.3rem] uppercase tracking-wider mb-4">Contact</h3>
-            <address className="not-italic text-[1.3rem] leading-[1.7] space-y-1">
+            <h3 className="text-[1.4rem] uppercase tracking-wider mb-4">Contact</h3>
+            <address className="not-italic text-[1.4rem] leading-[1.7] space-y-1">
               <a
                 href="https://maps.google.com/?q=450+Matheson+Blvd+E+unit+59,Mississauga,ON+L4Z+1P1"
                 target="_blank"
@@ -39,8 +39,8 @@ export function Footer() {
 
           {/* Enquiries */}
           <section className="w-full sm:w-[calc(50%-1.5rem)] lg:w-auto">
-            <h3 className="text-[1.3rem] uppercase tracking-wider mb-4">Enquiries</h3>
-            <p className="text-[1.3rem] leading-[1.7]">
+            <h3 className="text-[1.4rem] uppercase tracking-wider mb-4">Enquiries</h3>
+            <p className="text-[1.4rem] leading-[1.7]">
               Have a project in mind?<br />
               <Link href="/contact" className="hover:opacity-60 transition-opacity underline underline-offset-4">
                 Send us a message
@@ -51,12 +51,12 @@ export function Footer() {
 
         {/* Copyright bar */}
         <div className="mt-[5rem] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-          <span className="text-[1.3rem]">
+          <span className="text-[1.4rem]">
             © Vica Design. All Rights Reserved
             <Link href="/privacy" className="ml-4 hover:opacity-60 transition-opacity">Privacy Policy</Link>
             <Link href="/terms" className="ml-4 hover:opacity-60 transition-opacity">Terms &amp; Conditions</Link>
           </span>
-          <span className="text-[1.3rem]">
+          <span className="text-[1.4rem]">
             Design &amp; Build by{' '}
             <a href="#" className="hover:opacity-60 transition-opacity underline underline-offset-4">Studio</a>
           </span>

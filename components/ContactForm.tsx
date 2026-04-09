@@ -66,7 +66,7 @@ export function ContactForm() {
           disabled={status === 'loading'}
           className="
             font-serif bg-[#fcf6eb] text-[#1a1a1a]
-            px-[3rem] py-[1rem] text-[1.3rem] uppercase tracking-[1.95px]
+            px-[3rem] py-[1rem] text-[1.4rem] uppercase tracking-[1.95px]
             transition-all duration-200
             hover:bg-[#1a1a1a] hover:text-[#fcf6eb]
             disabled:opacity-60 disabled:cursor-not-allowed
