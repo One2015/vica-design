@@ -103,7 +103,7 @@ function SingleRow({ item }: { item: Extract<GalleryItem, { type: 'single' }> })
         </div>
       )}
       {item.caption && (
-        <figcaption className="mt-[2rem] text-secondary text-[1.5rem] leading-[1.6] max-w-[52rem]">
+        <figcaption className="mt-[2rem] text-secondary text-[16px] leading-[1.6] max-w-[52rem]">
           {item.caption}
         </figcaption>
       )}
@@ -161,7 +161,7 @@ function DoubleWithTextRow({
       {/* Text */}
       <div className={imageFirst ? 'lg:pl-[3rem]' : 'lg:pr-[3rem]'}>
         <blockquote
-          className="font-serif text-[clamp(1.5rem,2.5vw,2.4rem)] leading-[1.5] lg:indent-[12rem] design-narrative"
+          className="font-serif text-[20px] leading-[32px] lg:indent-[12rem] design-narrative"
         >
           {item.text}
         </blockquote>

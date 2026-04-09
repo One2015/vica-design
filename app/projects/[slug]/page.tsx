@@ -67,7 +67,7 @@ export default async function ProjectDetailPage({
           </h1>
 
           {/* Intro text */}
-          <p className="font-serif text-[clamp(1.25rem,2vw,2.4rem)] leading-[1.5] lg:indent-[12rem]">
+          <p className="font-serif text-[20px] leading-[32px] lg:indent-[12rem]">
             {project.intro}
           </p>
         </div>
@@ -94,7 +94,7 @@ export default async function ProjectDetailPage({
       {related.length > 0 && (
         <section className="px-page pb-[12rem]">
           <div className="max-w-content mx-auto">
-            <h2 className="font-serif text-[1.5rem] uppercase tracking-[0.15em] mb-[6rem]">
+            <h2 className="font-serif text-[16px] uppercase tracking-[0.15em] mb-[6rem]">
               More Projects
             </h2>
 
@@ -127,10 +127,10 @@ export default async function ProjectDetailPage({
 function Spec({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="text-[1.3rem] uppercase tracking-[0.1em] mb-[0.3rem] text-secondary">
+      <dt className="text-[13px] uppercase tracking-[0.1em] mb-[0.3rem] text-secondary">
         {label}
       </dt>
-      <dd className="text-[1.5rem]">{value}</dd>
+      <dd className="text-[16px]">{value}</dd>
     </div>
   )
 }
@@ -149,10 +149,10 @@ function RelatedNav({ currentSlug }: { currentSlug: string }) {
           href={`/projects/${prev.slug}`}
           className="nav-link text-left max-w-[45%]"
         >
-          <span className="block text-[1.3rem] uppercase tracking-[0.1em] text-secondary mb-2">
+          <span className="block text-[13px] uppercase tracking-[0.1em] text-secondary mb-2">
             Previous
           </span>
-          <span className="block font-serif text-[clamp(1.5rem,3vw,3rem)] leading-tight">
+          <span className="block font-serif text-[20px] leading-tight">
             {prev.title}
           </span>
         </Link>
@@ -165,10 +165,10 @@ function RelatedNav({ currentSlug }: { currentSlug: string }) {
           href={`/projects/${next.slug}`}
           className="nav-link text-right max-w-[45%]"
         >
-          <span className="block text-[1.3rem] uppercase tracking-[0.1em] text-secondary mb-2">
+          <span className="block text-[13px] uppercase tracking-[0.1em] text-secondary mb-2">
             Next
           </span>
-          <span className="block font-serif text-[clamp(1.5rem,3vw,3rem)] leading-tight">
+          <span className="block font-serif text-[20px] leading-tight">
             {next.title}
           </span>
         </Link>
