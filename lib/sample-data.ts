@@ -82,12 +82,10 @@ export const projects: Project[] = [
         parallax: false,
       },
       {
-        type: 'carousel',
+        type: 'double',
         images: [
           { src: IMGS.detail2, alt: 'Detail 1' },
           { src: IMGS.study1, alt: 'Study nook' },
-          { src: IMGS.living2, alt: 'Living corner' },
-          { src: IMGS.dining2, alt: 'Dining nook' },
         ],
       },
     ] satisfies GalleryItem[],
@@ -168,12 +166,10 @@ export const projects: Project[] = [
         imagePosition: 'left',
       },
       {
-        type: 'carousel',
+        type: 'double',
         images: [
           { src: IMGS.bathroom1, alt: 'Bathroom' },
           { src: IMGS.kitchen1, alt: 'Kitchen' },
-          { src: IMGS.study1, alt: 'Study' },
-          { src: IMGS.exterior2, alt: 'Garden' },
         ],
       },
     ] satisfies GalleryItem[],
