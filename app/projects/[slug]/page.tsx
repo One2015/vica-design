@@ -108,7 +108,7 @@ export default async function ProjectDetailPage({
                     title={rel.title}
                     role={rel.studioRole}
                     image={rel.cardImage}
-                    layout={rel.layout}
+                    layout="portrait"
                   />
                 </li>
               ))}
