@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <div className="max-w-wide mx-auto">
 
         {/* Page title */}
-        <h1 className="font-serif text-[1.5rem] uppercase tracking-[0.15em] mb-[10rem]">
+        <h1 className="font-serif text-[16px] uppercase tracking-[0.15em] mb-[10rem]">
           Projects
         </h1>
 

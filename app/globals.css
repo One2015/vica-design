@@ -187,8 +187,8 @@
               transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 65ch;
   margin: 3rem auto;
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-size: 20px;
+  line-height: 1.6;
   color: var(--color-text);
   border-left: 2px solid #8b7e74;
   padding-left: 2rem;
