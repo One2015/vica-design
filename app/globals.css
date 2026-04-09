@@ -149,10 +149,9 @@
 }
 
 /* Image grid with stagger */
+/* Removed auto-fit grid to ensure consistent column widths */
 .image-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Grid layout controlled by Tailwind classes in component */
 }
 
 .image-grid .image-item:nth-child(1) { transition-delay: 0s; }
