@@ -24,7 +24,7 @@ export function ImageWithHover({
 }: ImageWithHoverProps) {
   return (
     <div
-      className={`project-image image-item ${className}`}
+      className={`project-image image-item w-full ${className}`}
       style={{ transitionDelay: `${delay}s` }}
     >
       <Image
@@ -34,7 +34,7 @@ export function ImageWithHover({
         quality={quality}
         sizes={sizes}
         loading="lazy"
-        className="object-cover"
+        className="object-cover w-full h-full"
       />
     </div>
   )

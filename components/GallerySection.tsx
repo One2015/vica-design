@@ -116,18 +116,17 @@ function SingleRow({ item }: { item: Extract<GalleryItem, { type: 'single' }> })
 function DoubleRow({ item }: { item: Extract<GalleryItem, { type: 'double' }> }) {
   const imageQuality = item.quality ?? 95
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-[2rem] lg:gap-[3.5rem] image-grid">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-[2rem] lg:gap-[3.5rem]">
       {item.images.map((img, i) => (
-        <div key={i} className="w-full">
-          <ImageWithHover
-            src={img.src}
-            alt={img.alt ?? ''}
-            quality={imageQuality}
-            delay={i * 0.1}
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="relative aspect-[3/4] w-full"
-          />
-        </div>
+        <ImageWithHover
+          key={i}
+          src={img.src}
+          alt={img.alt ?? ''}
+          quality={imageQuality}
+          delay={i * 0.1}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="relative aspect-[3/4]"
+        />
       ))}
     </div>
   )
