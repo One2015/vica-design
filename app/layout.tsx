@@ -1,21 +1,23 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
 import { CustomCursor } from '@/components/CustomCursor'
 
-const serif = Playfair_Display({
+const serif = Cormorant_Garamond({
   subsets: ['latin'],
   variable: '--font-serif',
   display: 'swap',
-  weight: ['400', '500', '700'],
+  weight: ['300', '400', '500', '600'],
   style: ['normal', 'italic'],
 })
 
-const sans = Inter({
+const sans = DM_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
   display: 'swap',
+  weight: ['300', '400', '500'],
+  style: ['normal', 'italic'],
 })
 
 export const metadata: Metadata = {

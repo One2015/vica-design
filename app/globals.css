@@ -17,16 +17,19 @@
   }
 
   body {
-    font-family: var(--font-serif), Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+    font-family: var(--font-sans), 'DM Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem; /* 15px */
-    line-height: 1.5;
+    line-height: 1.7;
+    font-weight: 300;
     color: #1a1a1a;
     background: #fcf6eb;
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    font-weight: 400;
+    font-family: var(--font-serif);
+    font-weight: 300;
+    line-height: 1.15;
   }
 
   p, blockquote, ul, ol, li, figure, figcaption {

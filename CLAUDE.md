@@ -1,8 +1,12 @@
 # Vica Design — Figma MCP Design System Rules
 
 Project: Interior design studio portfolio
-Stack: Next.js 15 (App Router) · TypeScript · Tailwind CSS 4 · Playfair Display
+Stack: Next.js 15 (App Router) · TypeScript · Tailwind CSS 4 · Cormorant Garamond + DM Sans
 Base rem: `html { font-size: 62.5% }` → **1rem = 10px**
+
+## Font Pairing
+- **Serif**: Cormorant Garamond (300, 400, 500, 600) — for headings, titles, project names
+- **Sans**: DM Sans (300, 400, 500) — for body text, navigation, labels
 
 ---
 

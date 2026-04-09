@@ -8,8 +8,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['var(--font-serif)', 'Palatino', 'Book Antiqua', 'Georgia', 'serif'],
-        sans: ['var(--font-sans)', 'Inter', 'Helvetica Neue', 'sans-serif'],
+        serif: ['var(--font-serif)', 'Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'DM Sans', 'Helvetica Neue', 'sans-serif'],
       },
       colors: {
         primary: '#1a1a1a',
